@@ -1,0 +1,41 @@
+---
+api: 2
+
+# Basic Drush Make file for Drupal. Be sure to update the drupal_major_version
+# variable inside config.yml if you change the major version in this file.
+
+# Drupal core (major version, e.g. 6.x, 7.x, 8.x).
+core: "7.x"
+
+projects:
+
+  # Core.
+  drupal:
+    version: 7.50
+    # Use this if you need a working git repository of Drupal core instead of
+    # the latest stable.
+    # type: "core"
+    # download:
+    #   # Drupal core branch (e.g. "6.x", "7.x", "8.0.x").
+    #   branch: "8.1.x"
+    #   working-copy: true
+
+  # Other modules.
+  ctools:
+    version: "1.9"
+  devel:
+    version: "1.x-dev"
+  entity:
+    version: "1.7"
+  facetapi:
+    version: "1.5"
+  feeds:
+    version: "2.0-beta2"
+  job_scheduler:
+    version: "2.0-alpha3"
+  search_api:
+    version:  "1.x-dev"
+  search_api_solr:
+    version:  "1.x-dev"
+  views:
+    version: "3.14"
